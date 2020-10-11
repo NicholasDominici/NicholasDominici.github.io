@@ -11,24 +11,38 @@
     <link rel="Shortcut Icon" type="image/ico" href="donaldjah.JPG">
 </head>
 <body>
-    <iframe allow="autoplay; encrypted-media" frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/pnDB8itCPBA?rel=0&amp;autoplay=1&amp;mute=2;playsinline=1"></iframe>
+	<div id="audio">
+		<iframe allow="autoplay; encrypted-media" frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/pnDB8itCPBA?rel=0&amp;autoplay=1&amp;mute=2;playsinline=1"></iframe>	
+	</div>
+    
     <div id="meme"></div>
     <style>
-        	#meme {
+        #meme {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		background-color: #FFFFFF;
+		background: url("donaldjah.JPG");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-size: contain;
+		background-position: top left;
+		z-index: 12;
+		}
+
+		#audio {
 			display: block;
 			position: absolute;
 			top: 0;
 			left: 0;
-			height: 100%;
-			width: 100%;
+			height: 1px;
+			width: 1px;
 			overflow: hidden;
-			background-color: #FFFFFF;
-			background: url("donaldjah.JPG");
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-			background-size: contain;
-			background-position: top left;
-			z-index: 12;
+			pointer-events: none;
 		}
 
     </style>
