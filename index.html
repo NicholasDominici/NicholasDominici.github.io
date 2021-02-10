@@ -1,62 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html land="en">
     <head>
         <meta charset="utf-8">
-        <title>Nicholas Dominici Memes Inc</title>
+        <title>Nicholas Dominici - Home</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="Content-Language" content="en">
-        <meta name="Nicholas Dominici Memes Inc">
-        <meta name="keywords" content="Nicholas Dominici Funny Maymay Internet Page">
-        <meta name="description" content="Nicholas Dominici Funny Maymay Internet Page" />
+        <meta name="Nicholas Dominici">
         <link rel="Shortcut Icon" type="image/ico" href="taxi.jpg">
-
-        <style>
-            @font-face { font-family: Vogue; src: url('vogue.ttf'); }
-
-            .container {
-                display: grid;
-                grid-gap: 50px;
-                grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
-                grid-template-rows: repeat(2, minmax(50px, auto));
-            }
-
-            .container > div > img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 5px solid black;
-                font-size: 3em;
-
-            }
-            #audio {
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 1px;
-                width: 1px;
-                overflow: hidden;
-                pointer-events: none;
-            }
-
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="audio">
-            <iframe allow="autoplay; encrypted-media" frameborder="0" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/g1v1kH06wLU?rel=0&amp;autoplay=1&amp;mute=2;playsinline=1"></iframe>
-        </div>
-        <div class="container">
-            <div>
-                <img src="taxi.jpg"/>
+        <nav class="navbar navbar-expand-lg bg-blur navbar-dark">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/nicholas-dominici-110b4a178/" target="_blank">Linkedin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:imnick43@gmail.com" target="_blank">Contact</a>
+                </li>
+            </ul>
+
+
+        </nav>
+        <div class="carousel slide carousel-fade" data-interval="false" id="demo">
+            <div class="carousel-inner">
+                <div class="carousel-item bg-img active" style="background-image: url(images/image1.jpeg);">
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <h1>Lead AR Developer at sendit</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-img" style="background-image: url(images/image2.jpeg);">
+                </div>
             </div>
-                <a href="about/about.html">ABOUT</a>
-            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active" style="background-color: black;"></li>
+                <li data-target="#demo" data-slide-to="1" style="background-color: black;"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </body>
 </html>
