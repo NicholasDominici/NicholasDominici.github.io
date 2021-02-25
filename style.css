@@ -2,13 +2,16 @@ html, body {
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
   height:100%;
-  overflow: hidden;
+}
+body { 
+  position: relative;
 }
 h1 {
-  text-shadow: -2px 2px #111111;
+  color: white;
+  text-shadow: -2px 2px rgb(37, 37, 37);
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
-  font-size: 68px;
+  font-size:8vw;
 }
 .carousel-indicators {
   position: fixed;
@@ -32,11 +35,11 @@ h1 {
   height: 100%;
 }
 .caption1 {
-  position:relative;
-  align-items:center;
-  top: 3%;
-  margin-left: -50px;
-  margin-right: 50%;
+  top: 50%; 
+  -webkit-transform: translate(0%, -50%); 
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 300px;
 }
 .caption2 {
   left: 50%;
@@ -67,10 +70,12 @@ h1 {
   background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 0px;
   max-width: 100%;
   height: 100%;
 }
 .bg-img2 {
+  position:absolute;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -101,7 +106,10 @@ h1 {
 }
 .navbar-nav > .active > a {
   color: white;
-  pointer-events: none;    
+  pointer-events: none; 
+  -webkit-transition: .5s all ease-out;
+  -moz-transition: .5s all ease-out;
+  transition: .5s all ease-out;   
 }
 .slide-text {
   align-items:center;
