@@ -2,6 +2,11 @@ html, body {
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
   height:100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 body { 
   position: relative;
