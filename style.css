@@ -2,7 +2,7 @@ html, body {
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
   height:100%;
-  overflow: scroll;
+  overflow: auto;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -12,8 +12,7 @@ body {
   position: relative;
 }
 h1 {
-  color: white;
-  text-shadow: -2px 2px rgb(37, 37, 37);
+  color: rgb(26, 26, 26);
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
   font-size:8vw;
