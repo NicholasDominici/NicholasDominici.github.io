@@ -22,26 +22,47 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body data-spy="scroll" data-target=".navbar">
-        <nav class="navbar navbar-expand-lg bg-blur fixed-top">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#sendit">Home</a>
+        <div class="carousel slide carousel-fade" data-ride="carousel" id="demo">
+            <div class="carousel-inner">
+                <div id='sendit' class="carousel-item bg-img active">
+                    <div class="container-fluid bg-img img-blur" style="background-image: url(images/image1.jpeg);"></div>
+                    <div class="caption1">
+                        <h1>LEAD AR DEVELOPER AT SENDIT</h1>
+                        <a class="button" target="_blank" href="https://getsendit.com">SENDIT</a>
+                    </div>
+                </div>
+                <div id='snap' class="carousel-item bg-img2">
+                    <div class="container-fluid bg-img2 img-blur" style="background-image: url(images/image2.jpeg);"></div>
+                    <div class="caption2">
+                        <h1>OVER 4 BILLION IMPRESSIONS</h1>
+                        <a class="button2" target="_blank" href="https://lensstudio.snapchat.com/creator/RyTKcRiwNkJovRP1xxiVhA">LENSES</a>
+                    </div>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active" style="background-color: black;"></li>
+                <li data-target="#demo" data-slide-to="1" style="background-color: black;"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand bg-blur justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://story.snapchat.com/add/nick-dominici">Snapchat</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://story.snapchat.com/add/nick-dominici">Snap</a>
+                    <a class="nav-link" href="https://www.instagram.com/nicholasdominici/" target="_blank">Instagram</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="mailto:imnick43@gmail.com" target="_blank">Contact</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/nicholas-dominici-110b4a178/" target="_blank">Linkedin</a>
                 </li>
             </ul>
         </nav>
-        <div id='sendit' class="container-fluid bg-img" style="background-image: url(images/image1.jpeg);">
-            <div class="caption1">
-                <h1>Lead AR Developer at sendit</h1>
-            </div>
-        </div>
-        <div id='snap' class="container-fluid bg-img2" style="background-image: url(images/image2.jpeg);">
-        </div>
         <script>
             $('body').scrollspy({ target: '.navbar' })
         </script>
