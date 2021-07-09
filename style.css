@@ -14,7 +14,7 @@ body {
 h1 {
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
-  font-size:8vw;
+  font-size:8vh;
 }
 .carousel-indicators {
   position: absolute;
@@ -37,22 +37,13 @@ h1 {
 .carousel-inner {
   height: 100%;
 }
-.caption1 {
-  color: rgb(20, 20, 20);
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  padding-right: 10%;
-  padding-left: 10%;
-  transform: translate(-50%, -50%);
-}
-.caption2 {
+.caption {
   color: rgb(255, 255, 255);
   position: fixed;
   text-align: center;
   top: 50%;
   left: 50%;
+  width: 95%;
   padding-top: 200px;
   padding-bottom: 300px;
   transform: translate(-50%, -50%);
@@ -81,48 +72,24 @@ h1 {
   z-index: 999;
   background-color: rgba(19, 19, 19, 0.3); /* Black w/opacity/see-through */
   border: none;
-  color: rgb(22, 22, 22);
+  color: rgb(243, 243, 243);
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  margin-left: 25%;
-  margin-right: 25%;
-  display: inline-block;
+  display: fixed;
   margin-top: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
   cursor: pointer;
   border-radius: 50px;
 
   font-family: 'Museo Sans', sans-serif;
   font-weight: 900;
-  font-size: 38px;
+  font-size: 3vh;
 
   transition: transform 300ms ease-out;
 }
 .button:hover {
-  transform: scale(1.05);
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-.button2 {
-  z-index: 999;
-  background-color: rgba(19, 19, 19, 0.3); /* Black w/opacity/see-through */
-  border: none;
-  color: rgb(243, 243, 243);
-  padding: 5px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  margin-top: 25px;
-  cursor: pointer;
-  border-radius: 50px;
-
-  font-family: 'Museo Sans', sans-serif;
-  font-weight: 900;
-  font-size: 32px;
-
-  transition: transform 300ms ease-out;
-}
-.button2:hover {
   transform: scale(1.05);
   color: rgb(255, 255, 255);
   text-decoration: none;
